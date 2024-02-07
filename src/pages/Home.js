@@ -87,6 +87,7 @@ const Home=()=>{
                 }}
                 codeblock={`<!DOCTYPE html>\n<html>\nhead><title>Example</\ntitle><linkrel="stylesheet"href="style.css">\n/head>\nbody>\nh1><ahref="/">Header</a>\n/h1>\nnav><ahref="one/">One</a><ahref="two/">Two</\na><ahref="three/">Three</a>\n/nav>`}
                 codeColor={"text-yellow-25"}
+                backgroundGradient={<div className="codeblock1 absolute"></div>}
                 />
                </div>
                {/*codesection2*/}
