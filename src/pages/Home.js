@@ -116,7 +116,7 @@ const Home = () => {
               linkto: "/login",
               active: false,
             }}
-            codeColor={"text-white"}
+            codeColor={"text-yellow-25"}
             codeblock={`<!DOCTYPE html>\n<html>\nhead><title>Example</\ntitle><linkrel="stylesheet"href="style.css">\n/head>\nbody>\nh1><ahref="/">Header</a>\n/h1>\nnav><ahref="one/">One</a><ahref="two/">Two</\na><ahref="three/">Three</a>\n/nav>`}
             backgroundGradient={<div className="codeblock2 absolute"></div>}
           />
