@@ -48,8 +48,9 @@ const Home=()=>{
                 </CTAButton>
 
                </div>
-               <div className="shadow-blue-200 mx-3 my-12">
+               <div className="mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
                   <video
+                   className="shadow-[20px_20px_rgba(255,255,255)]"
                   muted
                   loop
                   autoPlay
@@ -90,35 +91,32 @@ const Home=()=>{
                </div>
                {/*codesection2*/}
                <div>
-                <CodeBlocks position={"lg:flex-row-reverse"}
-                heading={
-                    <div className="text-4xl font-semibold">
-                        Unlock Your
-                        <HighlightText text={"coding potential"}/>
-                        with your online courses
-                    </div>
-                        
-                }
-                subheading={
-                    "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you"
-                }
-                ctabtn1={
-                    {
-                        text:"try it yourself",
-                        linkto:"/signup",
-                        active:true,
-                    }
-                }
-                ctabtn2={{
-                   text:"learn more",
-                   linkto:"/login",
-                   active:false,
-                }}
-                codeblock={`<!DOCTYPE html>\n<html>\nhead><title>Example</\ntitle><linkrel="stylesheet"href="style.css">\n/head>\nbody>\nh1><ahref="/">Header</a>\n/h1>\nnav><ahref="one/">One</a><ahref="two/">Two</\na><ahref="three/">Three</a>\n/nav>`}
-                codeColor={"text-yellow-25"}
-                />
-               </div>
-
+          <CodeBlocks
+            position={"lg:flex-row-reverse"}
+            heading={
+              <div className="w-[100%] text-4xl font-semibold lg:w-[50%]">
+                Start
+                <HighlightText text={"coding in seconds"} />
+              </div>
+            }
+            subheading={
+              "Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."
+            }
+            ctabtn1={{
+              btnText: "Continue Lesson",
+              link: "/signup",
+              active: true,
+            }}
+            ctabtn2={{
+              btnText: "Learn More",
+              link: "/signup",
+              active: false,
+            }}
+            codeColor={"text-white"}
+            codeblock={`import React from "react";\n import CTAButton from "./Button";\nimport TypeAnimation from "react-type";\nimport { FaArrowRight } from "react-icons/fa";\n\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
+            backgroundGradient={<div className="codeblock2 absolute"></div>}
+          />
+        </div>
                <ExploreMore/>
 
 
